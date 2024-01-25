@@ -210,7 +210,7 @@ main{
   max-width: 100vw;
   width: 100vw;
   min-height: 100vh;
-  padding-top: 52px;
+  margin-top: 52px;
   z-index: 1;
   display: flex;
   flex-direction: column;
@@ -273,15 +273,11 @@ main{
   width: 100%;
   height: auto;
   font-size: 1rem;
-  text-align: justify;
+  text-align: left;
   font-weight: 200;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 20px;
-}
-.summary > #name{
-  font-weight: 400;
-  color: var(--heading);
 }
 
 .top_container > .image{
@@ -295,6 +291,151 @@ main{
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+
+.about_me_container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+
+
+@media only screen and (min-width: 765px) {
+  .main_container > .wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 0 24px;
+  }
+  .wrapper >.top_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+
+  .top_container > .intro{
+    padding-left: 30px;
+    padding-right: 0px;
+  }
+
+  .intro > h1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 0px;
+  }
+  .intro > h1 > .name{
+    font-size: 2rem;
+    color: var(--heading);
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 120%;
+  }
+  .intro > h1 > .position{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .intro > .summary{
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 200;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+
+  .top_container > .image{
+    width: 450px;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .image > img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .main_container > .wrapper{
+    padding: 0 24px;
+  }
+  .wrapper >.top_container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+
+  .top_container > .intro{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .intro > h1 > .name{
+    font-size: 2.25rem;
+    color: var(--heading);
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 120%;
+  }
+  .intro > h1 > .position{
+    font-size: 1.15rem;
+    font-weight: 400;
+  }
+
+  .intro > .summary{
+    width: 100%;
+    height: auto;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 200;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+
+  .top_container > .image{
+    width: 1000px;
+    height: auto;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .image > img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
 }
 
 
