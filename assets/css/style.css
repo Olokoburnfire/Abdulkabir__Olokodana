@@ -511,6 +511,11 @@ main section{
 /* Media Queries */
 
 @media only screen and (min-width: 765px) {
+  img{
+    object-fit: contain;
+    width: inherit;
+    height: inherit;
+  }
   .main_container > .wrapper{
     width: 100%;
     height: auto;
@@ -580,8 +585,34 @@ main section{
     height: auto;
     object-fit: contain;
   }
+
+  .tech_stack >.stack_icon{
+    width: 270px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+  }
+
+  .stack_icon > .icon {
+    width: 24px;
+      transition: all 30ms ease 0.1s;
+  }
+  .stack_icon > .icon > img {
+    width: 24px;
+    height: auto;
+      transition: all 30ms ease 0.1s;
+  }
 }
 @media only screen and (min-width: 1000px) {
+    img{
+      object-fit: contain;
+      width: inherit;
+      height: inherit;
+    }
   .main_container > .wrapper{
     padding: 0 24px;
   }
@@ -640,6 +671,27 @@ main section{
     width: 100%;
     height: auto;
     object-fit: contain;
+  }
+
+  .tech_stack >.stack_icon{
+    width: 270px;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+  }
+
+  .stack_icon > .icon {
+    width: 24px;
+      transition: all 30ms ease 0.1s;
+  }
+  .stack_icon > .icon > img {
+    width: 24px;
+    height: auto;
+      transition: all 30ms ease 0.1s;
   }
 
 }
