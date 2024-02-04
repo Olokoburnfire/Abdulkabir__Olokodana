@@ -219,10 +219,10 @@ main{
   background: transparent;
   position: relative;
 }
-main section{
+/* main section{
   min-height: 100vh;
+} */
 
-}
 .main_container > .wrapper{
   width: 100%;
   height: auto;
@@ -231,6 +231,8 @@ main section{
   gap: 100px;
 }
 
+
+/* Home section */
 .wrapper >.top_container{
   width: 100%;
   height: 100vh;
@@ -249,7 +251,6 @@ main section{
   align-items: start;
   justify-content: start;
   padding-left: 20px;
-  /* padding-right: 20px; */
 }
 
 .intro > h1 {
@@ -341,7 +342,6 @@ main section{
   flex-direction: row;
   align-items: center;
   justify-content: start;
-  /* gap: 16px; */
 }
 
 .tech_stack > .title{
@@ -380,13 +380,15 @@ main section{
   transform: scale(1.1);
 }
 
+/* About section */
 .about_me_container{
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   height: 100%;
   display: flex;
   flex-direction: column;
   gap: 28px;
+  margin-top: 40px;
 }
 
 .about_me_container> .about_me{
@@ -503,7 +505,128 @@ main section{
 }
 
 
+/* Work section */
 
+.wrapper > .projects_container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  justify-content: start;
+  padding: 20px;
+}
+
+.projects_container > .title{
+  font-size: 1.75rem;
+  color: var(--heading);
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 120%;
+}
+
+.projects_container > .projects_wrapper{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: start;
+  justify-content: start; 
+}
+
+.projects_wrapper > .project_container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--heading);
+}
+
+.project_container > .screenshot{
+  width: 100%;
+  height: auto;
+}
+.screenshot > img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 12px 12px 2px 2px #00000080;
+}
+
+.project_container > .details{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 8px;
+}
+.details > .title{
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 100%;
+}
+.details > .description{
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.details > .description > span {
+  color: var(--heading);
+  font-weight: 600;
+  text-decoration: 2px underline var(--imperial-red);
+}
+.details > .links{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: start;
+  gap: 20px;
+  padding-top: 20px;
+}
+.links > a{
+  width: auto;
+  height: auto;
+}
+.links> a > button{
+  width: 120px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--heading);
+  font-weight: 600;
+  border: 2px solid var(--imperial-red);
+  box-shadow: 8px 8px 2px 0px #00000080;
+  padding: 4px 0;
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+}
+.links> a > button:hover{
+  background: var(--imperial-red);
+  color: var(--body-background);
+  transform: scale(1.1);
+}
+
+.links> a > button > img{
+  width: 32px;
+  height: auto;
+}
 
 
 
@@ -606,6 +729,21 @@ main section{
     height: auto;
       transition: all 30ms ease 0.1s;
   }
+
+  .projects_wrapper > .project_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--heading);
+  }
+  .projects_wrapper > .project_container#project_two{
+    flex-direction: row-reverse;
+  }
 }
 @media only screen and (min-width: 1000px) {
     img{
@@ -694,6 +832,21 @@ main section{
       transition: all 30ms ease 0.1s;
   }
 
+  .projects_wrapper > .project_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--heading);
+  }
+
+  .projects_wrapper > .project_container#project_two{
+    flex-direction: row-reverse;
+  }
 }
 
 
