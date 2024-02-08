@@ -197,6 +197,25 @@ header {
     font-weight: 600;
   }
 
+  .nav_btn{
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--heading);
+    font-weight: 600;
+    border: 2px solid var(--imperial-red);
+    box-shadow: 8px 8px 2px 0px #00000080;
+    padding: 8px;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+  }
+  .nav_btn:hover{
+    background: var(--imperial-red);
+    color: var(--body-background);
+    transform: scale(1.1);
+  }
 }
 
 
@@ -321,15 +340,15 @@ main{
 
 .social_icon > a {
   width: 24px;
-    transition: all 30ms ease 0.1s;
+  transition: all 300ms ease ;
 }
 .social_icon > a > img {
   width: 24px;
   height: auto;
-    transition: all 30ms ease 0.1s;
+  transition: all 300ms ease;
 }
 
-.social_icon > .a:hover{
+.social_icon > a:hover{
   transition: 0.4s;
   transform: scale(1.1);
 }
@@ -367,17 +386,17 @@ main{
 
 .stack_icon > .icon {
   width: 24px;
-    transition: all 30ms ease 0.1s;
+    transition: all 300ms ease 0.1s;
 }
 .stack_icon > .icon > img {
   width: 24px;
   height: auto;
-    transition: all 30ms ease 0.1s;
+    transition: all 300ms ease 0.1s;
 }
 
 .stack_icon > .icon:hover{
   transition: 0.4s;
-  transform: scale(1.1);
+  transform: scale(1.15);
 }
 
 /* About section */
