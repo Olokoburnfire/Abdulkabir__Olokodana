@@ -420,8 +420,6 @@ main{
   padding-left: 24px;
 }
 
-.about_me_container > .engineering,
-.about_me_container > .learning_journey,
 .about_me_container > .skillset {
   width: 100%;
   height: auto;
@@ -434,8 +432,6 @@ main{
   text-align: left;
 }
 
-.engineering > .title,
-.learning_journey > .title,
 .skillset > .title{
   font-size: 1.25rem;
   font-weight: 500;
@@ -444,8 +440,7 @@ main{
   gap: 5px;
   align-items: center;
 }
-.engineering > .title > span,
-.learning_journey > .title > span,
+
 .skillset > .title > span{
   width: 24px;
   height: auto;
@@ -456,16 +451,11 @@ main{
   height: auto;
   object-fit: contain;
 }
-.engineering > .paragraph,
-.learning_journey > .paragraph,
+
 .skillset > .paragraph{
   font-size: 1rem;
   font-weight: 400;
   text-align: justify;
-}
-.engineering > .paragraph::first-letter,
-.learning_journey > .paragraph::first-letter{
-  padding-left: 24px;
 }
 
 .skillset > .paragraph{
@@ -505,7 +495,7 @@ main{
 }
 
 
-/* Work section */
+/* Project section */
 
 .wrapper > .projects_container{
   width: 100%;
@@ -627,6 +617,87 @@ main{
   width: 32px;
   height: auto;
 }
+
+
+
+
+
+/* Contact section */
+
+.wrapper > .contact_container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 4px;
+  align-items: start;
+  justify-content: start;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.contact_container > .title{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.contact_container > .desc > {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.contact_container > .contact_wrapper{
+  padding-top: 16px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  text-align: left;
+}
+
+.contact_wrapper > .social_media_accounts{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 16px;
+}
+
+.social_media_accounts > .social_media{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+.social_media > .sm_icon{
+  width: 20px;
+}
+
+.social_media > button.sm_handle{
+  color: var(--text);
+  font-weight: 400;
+}
+
+.social_media > .sm_handle{
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--heading);
+  cursor: pointer;
+  transition: all 350ms ease-in-out ;
+}
+.social_media > .sm_handle:hover{
+  color: var(--imperial-red);
+
+}
+
 
 
 
