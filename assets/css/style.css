@@ -542,6 +542,7 @@ main{
   align-items: start;
   justify-content: start;
   padding: 20px;
+  /* padding-top: 0px; */
 }
 
 .projects_container > .title{
